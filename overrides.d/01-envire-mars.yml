@@ -1,0 +1,8 @@
+---
+- simulation/mars:
+    github: annaborn/mars
+    branch: master
+- tools/smurf:
+    branch: smurf_visual
+- envire/envire_smurf:
+    branch: smurf_visual

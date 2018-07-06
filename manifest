@@ -1,8 +1,12 @@
 package_sets:
   - github: rock-core/rock-package_set
   - github: rock-simulation/package_set
+  - github: envire/envire-package_set
 
 layout:
   - rock.simulation
+  - simulation/envire_managers
+  - simulation/envire_smurf_loader
+  - simulation/envire_graphics
   
 exclude_packages:
