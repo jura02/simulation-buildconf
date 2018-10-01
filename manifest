@@ -8,7 +8,7 @@ package_sets:
 
 
 layout:
-  - rock.simulation
+  #- rock.simulation
   - simulation/envire_managers
   - simulation/envire_smurf_loader
   - simulation/envire_graphics
@@ -16,5 +16,6 @@ layout:
   - models/robots/crex
   - models/robots/seekurjr
   - models/environments/rimres_crater
+  #- simulation/orogen/mars
   
 exclude_packages:
