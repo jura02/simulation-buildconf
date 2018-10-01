@@ -3,11 +3,18 @@ package_sets:
   - github: rock-simulation/package_set
   - github: envire/envire-package_set
   - dfkigit: compilerspeedup/package_set
+  - dfkigit: models-robots/package_set
+  - dfkigit: models-environments/package_set
+
 
 layout:
   - rock.simulation
   - simulation/envire_managers
   - simulation/envire_smurf_loader
   - simulation/envire_graphics
+  - models/robots/asguard_v4
+  - models/robots/crex
+  - models/robots/seekurjr
+  - models/environments/rimres_crater
   
 exclude_packages:
