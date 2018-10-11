@@ -2,9 +2,6 @@
 - pkg_set:github:/rock-simulation/package_set.git:
     github: rauldg/simulation-package_set
     branch: envireMars
-- pkg_set:dfkigit:/models-robots/package_set.git:
-    dfkigit: InFuse/package_set_models_robots
-    branch: add_seekurjr
 - simulation/mars/.*:
     github: annaborn/mars
     branch: envire

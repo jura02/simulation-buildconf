@@ -16,6 +16,7 @@ layout:
   - models/robots/crex
   - models/robots/seekurjr
   - models/environments/rimres_crater
+  - models/environments/spacebot_cup
   #- simulation/orogen/mars
   
 exclude_packages:
