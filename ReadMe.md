@@ -5,9 +5,9 @@
     
     wget http://rock-robotics.org/autoproj_bootstrap
     # If you have no write access to this repository:
-    ruby autoproj_bootstrap git https://github.com/H2020-InFuse/cdff-buildconf.git branch=cdff_dev
+    ruby autoproj_bootstrap git https://github.com/jura02/simulation-buildconf.git branch=envireMars
     # If you have write access:
-    ruby autoproj_bootstrap git git@github.com:H2020-InFuse/cdff-buildconf.git branch=cdff_dev
+    ruby autoproj_bootstrap git git@github.com:jura02/simulation-buildconf.git branch=envireMars
     # Answer "whether C++11 should be enabled for Rock packages [false]" with "true" and the
     # other with default (just hit enter)
     
