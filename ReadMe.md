@@ -25,13 +25,13 @@ autoproj build
 
 Execute the following to get the infuse framework ready to use on your machine.
 
-    Create a folder and move into it
+   0. Create a folder and move into it
 
-    Download the autoproj bootstrap script
+   1. Download the autoproj bootstrap script
 
     $ wget http://www.rock-robotics.org/autoproj_bootstrap
 
-    Run the boostrap script and provide the repository address
+   2. Run the boostrap script and provide the repository address
 
     $ ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf branch=cdff_dev
 
@@ -43,11 +43,11 @@ Execute the following to get the infuse framework ready to use on your machine.
 
     There you type 'true' and hit enter.
 
-    Source your InFuse environment
+   3. Source your InFuse environment
 
     $ source env.sh
 
-    Update the checkout
+   4. Update the checkout
 
     $ autoproj update
 
@@ -55,7 +55,7 @@ Execute the following to get the infuse framework ready to use on your machine.
 
     Command finished successfully at 2018-04-09 15:13:05 +0200
 
-    Compile the Sources
+   5. Compile the Sources
 
     $ autoproj build
 
