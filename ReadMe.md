@@ -1,4 +1,4 @@
-## Quick Instructions (also works for ubuntu:latest docker container from dockerhub.com):
+## Quick Instructions
     First of all we need to Install MARS Environment:
     So Open The Terminal or Command Prompt and follow the following steps:
     apt-get update
