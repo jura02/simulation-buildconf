@@ -1,4 +1,4 @@
-# Quick Repository
+# Quick Repository (also works for ubuntu:latest docker container from dockerhub.com):
 
 apt-get update
 apt-get install -y build-essential ruby ruby-dev sudo wget
