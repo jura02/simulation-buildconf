@@ -4,7 +4,10 @@
     apt-get update
     apt-get install -y build-essential ruby ruby-dev sudo wget
     
+    After Installing the packages CREATE a NEW Folder:
+    
     wget http://rock-robotics.org/autoproj_bootstrap
+    
     # If you have no write access to this repository:
     ruby autoproj_bootstrap git https://github.com/jura02/simulation-buildconf.git branch=envireMars
     # If you have write access:
