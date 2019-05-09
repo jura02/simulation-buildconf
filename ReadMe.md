@@ -35,9 +35,10 @@
     autoproj build             
     #This step will start building Everything.
     #Maybe you get an error "CMake fails to compile the simple test".
-    #There are to possibilites 
+    #There are two possibilites 
     #1st install build essential using command sudo apt install build-essential
     #Still you are havig the same error then remove the ccache and install that again because we don't need ccache.
+    #And during installation we had disabled the ccache but somehow he is still looking for ccache.
     #So by removig the ccache file and installing again it will remove this error.
     #After removing this error again send autoproj build command.
     #This time it will build everything.
