@@ -2,61 +2,69 @@
     First of all we need to Install MARS Environment:
      
     We need to perform the following steps without usings sudo (To avoid generating files and folders owned by root)
-    Now Open The Terminal or Command Prompt and follow the following steps:
+    Now Open The Terminal or Command Prompt and follow the following steps step-by-step:
     
-       $ apt-get update
-       $ apt-get install -y build-essential ruby ruby-dev sudo wget
+     
+      1) apt-get update
+      
+      2) apt-get install -y build-essential ruby ruby-dev sudo wget
     
-    wget http://rock-robotics.org/autoproj_bootstrap
+      3) wget http://rock-robotics.org/autoproj_bootstrap
     
-    The user has to set up his/her keys in the github account and use the correspondent command:
+    #The user has to set up his/her keys in the github and gitlab account and use the correspondent command:
     
-    # If you have no write access to this repository: (If you don't have the SSH key)
-    ruby autoproj_bootstrap git https://github.com/jura02/simulation-buildconf.git branch=envireMars
-    # If you have write access: (It means if you have already generated the SSH key)
-    ruby autoproj_bootstrap git git@github.com:jura02/simulation-buildconf.git branch=envireMars
+      4) ruby autoproj_bootstrap git git@github.com:jura02/simulation-buildconf.git branch=envireMars
+       
+    #If the user has not generated the SSH key in his/her github and gitlab account then use the correspondent command:   
+   
+      4) ruby autoproj_bootstrap git https://github.com/jura02/simulation-buildconf.git branch=envireMars
+
+
     # Answer "whether C++11 should be enabled for Rock packages [false]" with "true" and the
     # other with default (just hit enter)
-    
     
     #Sometimes you may face the problems like "No Access Rights to your repository".
     #Make sure you have corrected generated the SSH Key for both GitLab and GitHub
     
+    #Similarly sometimes you don't have access to the specific Repository forexample:
+    "No Access Rights to git@git.hb.dfki.de/models-environments" 
+    #In this case you have to make a access request to the maintainer/owner of that Repository. 
+  
     
-    
-    
-    source env.sh
-    autoproj update
-    #While checking out Models Evironment and Models Robots the program stucks.
-    #To Complete the installation we have to install separately individually each robot/environment.
-    #Let say  we need to install spacebot_cup robot.
-    #Todo so use autoproj update models/environments/spacebot_cup
-    #Similarly do for other robots like asguard_v4 etc
-    #After doing this for all the robots Now move to the next step. 
+      5) source env.sh
+      
+      6) autoproj update
 
-    autoproj build             
-    #This step will start building Everything.
-    #Maybe you get an error "CMake fails to compile the simple test".
-    #There are two possibilites 
-    #1st install build essential using command sudo apt install build-essential
-    #Still you are havig the same error then remove the ccache and install that again because we don't need ccache.
-    #And during installation we had disabled the ccache but somehow he is still looking for ccache.
-    #So by removig the ccache file and installing again it will remove this error.
-    #After removing this error again send autoproj build command.
-    #This time it will build everything.
+      7) autoproj build
+    #This step will start building Everything and will check your installation .
     
-    mars_app
+      8) mars_app
     #To launch the mars application.
-    #If you are facing problem launching the application.
-    #Like its says command not found.
-    #Then install mars_app separately using 
-    autoproj build simulation/mars/app/
-    
-    
-    #This will install the mars_app
-    #Now by writing mars_app in terminal and after pressing enter it will open mars_app.
     #Here you can load different environments and robots of your chioce.
     
+ ## TroubleShooting Section:
+    1- PROGRAM STUCKS AFTER ENTERING " autoproj update "
+    If you are on step NO:06 and your program got stuck: 
+    #While checking out Models Environment and Models Robots.
+    Now you have to install each robot/environment separately to overcome this problem.
+    #Let say  we need to install spacebot_cup robot.
+    #Todo so use:
     
+              autoproj update models/environments/spacebot_cup
+              
+    #Similarly do same for all the other robots like asguard_v4 etc
+    #After doing this for all the robots.
+    #Now move to the next step. 
+    
+    2- AFTER ENTERING " autoproj build ".
+    #Maybe you get an error "CMake fails to compile the simple test".
+    There are two possibilites to overcome this problem. 
+    #First of all install build essential using the correspondent command:
+    
+              sudo apt install build-essential
+              
+    #If you are still having the same error then remove the ccache because we don't need ccache using " apt-get ".
+    #Because during installation we had disabled the ccache but somehow he is still looking for ccache.
+    #So by removig the ccache file this error will be removed.
     
 
