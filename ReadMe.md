@@ -14,7 +14,7 @@ Now Open The Terminal or Command Prompt and follow the following steps step-by-s
     wget http://rock-robotics.org/autoproj_bootstrap
           
     
-3) Run the boostrap script and provide the repository address:
+3)Run the boostrap script and provide the repository address:
 #The user has to set up his/her keys in the github and gitlab account and use the correspondent command:
       
     ruby autoproj_bootstrap git git@github.com:jura02/simulation-buildconf.git branch=envireMars          
