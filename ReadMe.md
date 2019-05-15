@@ -25,14 +25,7 @@ If the user has not generated the SSH key in his/her github and gitlab account t
     ruby autoproj_bootstrap git https://github.com/jura02/simulation-buildconf.git branch=envireMars
         
 
-Answer "whether C++11 should be enabled for Rock packages [false]" with "true" and the other with default (just hit enter)
-    
-Sometimes you may face the problems like "No Access Rights to your repository": Make sure you have corrected generated the SSH Key for both GitLab and GitHub
-    
-Similarly, sometimes you don't have access to the specific Repository forexample:
-"No Access Rights to git@git.hb.dfki.de/models-environments" 
-In this case, you have to make an access request to the maintainer/owner of that Repository. 
-  
+Answer "whether C++11 should be enabled for Rock packages [false]" with "true" and the other with default (just hit enter)    
     
 4) Source Your Environment: 
       
@@ -57,7 +50,15 @@ In mars_app you can load different environments and robots of your chioce.
     
  ## TroubleShooting Section:
  
-1- PROGRAM STUCKS AFTER ENTERING ` autoproj update `
+1- No Access Right:
+
+Sometimes you may face the problems like "No Access Rights to your repository": Make sure you have corrected generated the SSH Key for both GitLab and GitHub
+    
+Similarly, sometimes you don't have access to the specific Repository forexample:
+"No Access Rights to git@git.hb.dfki.de/models-environments" 
+In this case, you have to make an access request to the maintainer/owner of that Repository. 
+
+2- PROGRAM STUCKS AFTER ENTERING ` autoproj update `
 
 If you are on step NO:05 and your program got stuck while checking out Models Environment and Models Robots. 
 
@@ -71,7 +72,7 @@ Todo so use:
 Similarly do same for all the other robots like asguard_v4 etc.
 
     
-2- AFTER ENTERING ` autoproj build `.
+3- AFTER ENTERING ` autoproj build `.
 
 Maybe you get an error "CMake fails to compile the simple test".
 There are two possibilites to overcome this problem: 
